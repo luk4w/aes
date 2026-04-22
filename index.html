@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>aes</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="title">// aes · aes-256-gcm</div>
+
+  <textarea id="input" rows="5" placeholder="text..."></textarea>
+  <input    id="password" type="password" placeholder="password...">
+
+  <div class="btns">
+    <button onclick="run(false)">encrypt</button>
+    <button onclick="run(true)">decrypt</button>
+  </div>
+
+  <textarea id="output" rows="5" readonly onclick="copy()" placeholder="output..."></textarea>
+  <div class="copy-hint">click the output to copy</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
